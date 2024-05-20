@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCIE = [
+  {
+    date: "Diciembre de 2020 a la fecha...",
+    title: "Analista de desarrollo en la SESAET",
+    description:
+      "Desarrollo y mantenimiento de aplicaciones asi como soporte a la plataforma digital estatal para declaraciones de los servidores publicos en el estado de tlaxcala.",
+    link: "#",
+  },
+  {
+    date: "Marzo de 2011 a Diciembre de 2020",
+    title: "Analista y lider de equipo en AMATECH SA de CV",
+    description: "Desarrollo y mantenimiento de aplicaciones",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCIE.map((experience) => (
+      <li class="mb-10 ms-6">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
