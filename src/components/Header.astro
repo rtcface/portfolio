@@ -1,7 +1,14 @@
+---
+import BurgerIcon from "./icons/BurgerIcon.astro";
+---
+
 <header
-  class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto static"
+  class="flex flex-row h-14 pl-3 sm:flex sm:py-5 sm:justify-center items-center xl:w-[1120px] mx-auto static bg-neutral-950 bg-[radial-gradient(ellipse_95%_95%_at_50%_-10%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
 >
-  <nav class="text-white flex flex-row gap-x-10 opacity-80">
+  <BurgerIcon class="sm:invisible" />
+  <nav
+    class="text-white opacity-80 invisible md:flex flex-row sm:visible gap-x-8 xl:gap-x-10 xl:visible"
+  >
     <a href="#top">Inicio</a>
     <a href="#experiencia">Experiencia</a>
     <a href="#proyectos">Proyectos</a>
