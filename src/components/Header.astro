@@ -1,18 +1,14 @@
 ---
+import Menu from "./Menu.astro";
 import BurgerIcon from "./icons/BurgerIcon.astro";
 ---
 
 <header
-  class="flex flex-row h-14 pl-3 sm:flex sm:py-5 sm:justify-center items-center xl:w-[1120px] mx-auto static bg-neutral-950 bg-[radial-gradient(ellipse_95%_95%_at_50%_-10%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+  class="flex flex-row h-14 pl-3 sm:flex sm:py-5 sm:justify-center items-center xl:w-[1120px] mx-auto static"
 >
-  <BurgerIcon class="sm:invisible" />
-  <nav
-    class="text-white opacity-80 invisible md:flex flex-row sm:visible gap-x-8 xl:gap-x-10 xl:visible"
-  >
-    <a href="#top">Inicio</a>
-    <a href="#experiencia">Experiencia</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#sobre-mi">Sobre mi</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <a href="#"><BurgerIcon class="sm:invisible" /></a>
+
+  <Menu
+    class="text-white opacity-80 flex flex-col mt-40 md:flex sm:visible gap-x-8 xl:gap-x-10 xl:visible"
+  />
 </header>
